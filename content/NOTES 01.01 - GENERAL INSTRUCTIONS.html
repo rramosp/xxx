@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 - General Instructions &#8212; Analisis y Diseño II</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LAB 01 - Submission example" href="LAB%2001%20-%20SUBMISSION%20EXAMPLE.html" />
+    <link rel="prev" title="Module 01 - PRACTICE" href="M01_intro.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/rlxmooc_logo-black.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Analisis y Diseño II</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="M01_intro.html">
+   Module 01 - PRACTICE
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     01 - General Instructions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2001%20-%20SUBMISSION%20EXAMPLE.html">
+     LAB 01 - Submission example
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/NOTES 01.01 - GENERAL INSTRUCTIONS.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/rramosp/xxx/blob/main/content/NOTES 01.01 - GENERAL INSTRUCTIONS.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#repository-layout">
+   1. Repository layout
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-b-tt-content-tt-b-folder">
+     The
+     <b>
+      <tt>
+       content
+      </tt>
+     </b>
+     folder
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#labs-and-autograders">
+   2. LABS and autograders
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#publishing">
+   3. Publishing
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-you-must-know">
+     What you must know
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-you-must-do">
+     What you must do
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-remarks-for-labs-and-graders">
+   4. General remarks for LABS and graders
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#to-create-the-publishable-student-version-of-a-lab-notebook">
+   5. To create the publishable student version of a LAB notebook
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="general-instructions">
+<h1>01 - General Instructions<a class="headerlink" href="#general-instructions" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>wget -nc --no-cache -O init.py -q https://raw.githubusercontent.com/rramosp/xxx/main/content/init.py
+<span class="kn">import</span> <span class="nn">init</span><span class="p">;</span> <span class="n">init</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">force_download</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="repository-layout">
+<h2>1. Repository layout<a class="headerlink" href="#repository-layout" title="Permalink to this headline">¶</a></h2>
+<p>There are two top level folders <b><tt>content</tt></b> and <b><tt>admin</tt></b>.</p>
+<div class="section" id="the-b-tt-content-tt-b-folder">
+<h3>The  <b><tt>content</tt></b> folder<a class="headerlink" href="#the-b-tt-content-tt-b-folder" title="Permalink to this headline">¶</a></h3>
+<p>All publishable materials are to placed under content. This includes mostly:</p>
+<ul class="simple">
+<li><p>Notebooks with course content, explanations, code, etc. regularly used to support your lectures.</p></li>
+<li><p>Notebooks with <strong>LABS</strong>, containing algorithmic exercises for students to complete.</p></li>
+<li><p>Resources required by any notebook, such as custom libraries, images, data files, etc.</p></li>
+</ul>
+<p>You can name your notebooks as you want. We suggest to use the following convention:</p>
+<ul class="simple">
+<li><p><b><tt>NOTES - *.ipynb</tt></b> for notebooks with course content (such as this one)</p></li>
+<li><p><b><tt>LAB - *.ipynb</tt></b> for notebooks with labs.</p></li>
+</ul>
+<p>All other resources (libs, images, files, etc.) are to be place under the <b><tt>content/local</tt></b> folder with the standard organization (<b><tt>lib</tt></b>, <b><tt>imgs</tt></b>, <b><tt>data</tt></b>, etc.). Observe the following examples.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># importing a local lib</span>
+<span class="kn">from</span> <span class="nn">local.lib</span> <span class="kn">import</span> <span class="n">mylib</span>
+<span class="n">mylib</span><span class="o">.</span><span class="n">do_something</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a random number 2.05
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.05442021141063
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># using local data</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;local/data/trilotropicos.csv&quot;</span><span class="p">)</span>
+<span class="n">x</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>length</th>
+      <th>width</th>
+      <th>label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3.20</td>
+      <td>3.01</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3.42</td>
+      <td>2.66</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3.75</td>
+      <td>2.92</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2.97</td>
+      <td>3.38</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3.63</td>
+      <td>2.35</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the recommended way to show local images is with IPython.display rather than inline within markdown</span>
+<span class="c1"># this ensures they will be shown corrctly in different platforms (colab, binder, github, etc.)</span>
+<span class="kn">from</span> <span class="nn">IPython</span> <span class="kn">import</span> <span class="n">display</span>
+<span class="n">display</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;local/imgs/timeseries-prediction.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 01.01 - GENERAL INSTRUCTIONS_5_0.png" src="../_images/NOTES 01.01 - GENERAL INSTRUCTIONS_5_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="labs-and-autograders">
+<h2>2. LABS and autograders<a class="headerlink" href="#labs-and-autograders" title="Permalink to this headline">¶</a></h2>
+<p>LABS notebooks are special in that:</p>
+<ul class="simple">
+<li><p>they are named <code class="docutils literal notranslate"><span class="pre">*--XX-TEACHER--XX.ipynb</span></code> and contain BOTH the student exercises and the graders the teacher develops.</p></li>
+<li><p>when ready, a <b>student version</b> is generated that strips out graders and teacher code.</p></li>
+<li><p><b>ONLY</b> this student version is published.</p></li>
+</ul>
+<p>See <code class="docutils literal notranslate"><span class="pre">LAB</span> <span class="pre">01</span> <span class="pre">-</span> <span class="pre">SUBMISSION</span> <span class="pre">EXAMPLE--XX--TEACHER--XX.ipynb</span></code> for instructions</p>
+</div>
+<div class="section" id="publishing">
+<h2>3. Publishing<a class="headerlink" href="#publishing" title="Permalink to this headline">¶</a></h2>
+<p>This repository is organized to be published in <span class="xref myst"><tt>github</tt></span> with automatic <a class="reference external" href="https://jupyterbook.org/"><tt>Jupyter book</tt></a> rendering, and configured to open notebooks in Google Colab. As an example, see our AI course which is structured this way:</p>
+<ul class="simple">
+<li><p>https://github.com/rramosp/20201.xai4eng the github repository with a structure similar to this one</p></li>
+<li><p>https://rramosp.github.io/20201.xai4eng the Jupyter Book version automatically rendererd by github</p></li>
+</ul>
+<div class="section" id="what-you-must-know">
+<h3>What you must know<a class="headerlink" href="#what-you-must-know" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>course contents are published in github. You may choose what level of privacy you want for your repository with the standard github configuration options.</p></li>
+<li><p>the top level <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> ensures the <code class="docutils literal notranslate"><span class="pre">admin</span></code> folder and any notebook named <code class="docutils literal notranslate"><span class="pre">*--XX-TEACHER--XX.ipynb</span></code> are not published.</p></li>
+<li><p>the top level <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> configure the appearance and structure of jupyter book</p></li>
+<li><p>the top level <code class="docutils literal notranslate"><span class="pre">.github\workflows\book.html</span></code> controls de automatic generation of the <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Book</span></code> version by github. You should not need to touch this fuile.</p></li>
+<li><p>the code at the beginning of each notebook must <strong>ALWAYS</strong> be executed and ensures that libs and local resources are available in whatever execution environment the notebook is running.</p></li>
+</ul>
+</div>
+<div class="section" id="what-you-must-do">
+<h3>What you must do<a class="headerlink" href="#what-you-must-do" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Create your course materials as notebooks and supporting resources (imgs, libs, etc.)</p></li>
+<li><p>Create your graders for the LABS (see <code class="docutils literal notranslate"><span class="pre">LAB</span> <span class="pre">01</span> <span class="pre">-</span> <span class="pre">SUBMISSION</span> <span class="pre">EXAMPLE--XX--TEACHER--XX.ipynb</span></code> for instructions)</p></li>
+<li><p>Organize the way you want to structure and navigate your course in <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>. You can include <code class="docutils literal notranslate"><span class="pre">.md</span></code> files additionally and refer to them in <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code></p></li>
+<li><p><strong>KEEP A COPY</strong> of the labs notebook with your grades (ending in <code class="docutils literal notranslate"><span class="pre">--XX--TEACHER--XX.ipynb</span></code>) and the <code class="docutils literal notranslate"><span class="pre">admin</span></code> folder, as they are the <strong>ONLY ITEMS</strong> which are not persisted in github.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="general-remarks-for-labs-and-graders">
+<h2>4. General remarks for LABS and graders<a class="headerlink" href="#general-remarks-for-labs-and-graders" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Each LAB notebook may contain several tasks (exercises)</p></li>
+<li><p>Each task can be of one of two types:</p>
+<ul>
+<li><p><strong>Grader by value</strong>: The student must supply a value after he does a calculation. See Ejercicio 1 below.</p></li>
+<li><p><strong>Grader by function</strong>: The student must supply a function implementation. See Ejercicio 2 below.</p></li>
+</ul>
+</li>
+<li><p>You must develop a <strong>grader function</strong> that, whenever executed returns a tuple <code class="docutils literal notranslate"><span class="pre">(grade,</span> <span class="pre">message)</span></code></p>
+<ul>
+<li><p>See both examples how to access the student supplied value or function</p></li>
+</ul>
+</li>
+<li><p>Observe that, for each task, you must define:</p>
+<ul>
+<li><p>the cells for the student with instructions, template code and submission cell</p></li>
+<li><p>a set of cell with the grader function, testing code, and registering the grader with the platform</p></li>
+</ul>
+</li>
+<li><p>The following comments as first line of each cell have special meaning:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">TEACHER</span> <span class="pre">DEFINEGRADER</span></code>    ::   this cell must contain the grader function. These cells will be removed when creating the student publishable notebook.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">TEACHER</span> <span class="pre">SETGRADER</span></code> :: this cell must contain the code to register your grader with the platform. These cells will be removed when creating the student publishable notebook.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">TEACHER</span></code> :: cells with this comment can contain any code, and it will be removed when creating the student publishable notebook.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">KEEPOUTPUT</span></code> :: cells with this comment will be KEPT in the student version, but their OUTPUT will be removed.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="to-create-the-publishable-student-version-of-a-lab-notebook">
+<h2>5. To create the publishable student version of a LAB notebook<a class="headerlink" href="#to-create-the-publishable-student-version-of-a-lab-notebook" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The cells at the end will create the student version of the notebook when executed.</p></li>
+<li><p>The notebook will have the same name with the <code class="docutils literal notranslate"><span class="pre">--XX--TEACHER--XX</span></code> suffix removed.</p></li>
+<li><p>All teacher cells will be removed as specified above.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="M01_intro.html" title="previous page">Module 01 - PRACTICE</a>
+    <a class='right-next' id="next-link" href="LAB%2001%20-%20SUBMISSION%20EXAMPLE.html" title="next page">LAB 01 - Submission example</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By YOUR NAME / YOUR INSTITUTION<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
